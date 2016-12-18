@@ -1,0 +1,120 @@
+//@import "compass/css3";
+//@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #f0dc82;
+}
+
+a {
+  color: #00B7FF;
+}
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input, textarea, select, .uneditable-input {
+  border: none;
+  width: 100%;
+  background: transparent;
+  font-size: 14px;
+  color: #333;
+  @include box_sizing;
+  outline: none;
+}
+
+.input-form-border {
+  padding: 12px 10px;
+  border: 1px solid #dbdbdb;
+  background: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.navbar-inverse {
+  border: none;
+  z-index: 1000;
+  background: inherit;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  background-color: inherit;
+  padding: 0;
+
+  .row {
+    width: 500px;
+    margin: 0 100px;
+    padding: 50px 0;
+    text-align: center;
+
+    img {
+      z-index: 100;
+    }
+  }
+
+  .img-title {
+    position: relative;
+    left: 385px;
+    top: -65px;
+    width: 665px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+}
+
+.body-lu {
+  background: url(/images/corner_lu.jpg) no-repeat top left;
+  min-height: 500px;
+  background-size: 200px;
+}
+
+.body-rd {
+  background: url(/images/corner_rd.jpg) no-repeat bottom right;
+  min-height: 500px;
+  background-size: 200px;
+  padding: 100px;
+
+  .top-img {
+    position: relative;
+    top: -90px;
+    left: 350px;
+  }
+}
+
+.wrapper {
+  width: 1060px;
+  height: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px black;
+}
+
+.menu-item {
+  background: url(/images/divider.jpg) no-repeat top,
+              url(/images/divider.jpg) no-repeat bottom;
+  background-size: 200px;
+  display: inline-block;
+  width: 200px;
+  height: 70px;
+  margin-right: 8px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 30px;
+  color: #7b3f00;
+  text-decoration: none;
+
+  &:hover {
+    color: chocolate;
+    text-decoration: none;
+  }
+}
+
+.menu {
+  margin: -30px 2px 20px;
+}
