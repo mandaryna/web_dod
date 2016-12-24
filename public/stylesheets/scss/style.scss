@@ -83,6 +83,7 @@ input, textarea, select, .uneditable-input {
 
   .top-img {
     position: relative;
+    display: flex;
     top: -90px;
     left: 350px;
   }
@@ -117,4 +118,8 @@ input, textarea, select, .uneditable-input {
 
 .menu {
   margin: -30px 2px 20px;
+}
+
+p {
+  font-size: 20px;
 }

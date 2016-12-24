@@ -85,11 +85,12 @@ input, textarea, select, .uneditable-input {
 /* line 84, scss/style.scss */
 .body-rd .top-img {
   position: relative;
+  display: flex;
   top: -90px;
   left: 350px;
 }
 
-/* line 91, scss/style.scss */
+/* line 92, scss/style.scss */
 .wrapper {
   width: 1060px;
   height: 100%;
@@ -97,7 +98,7 @@ input, textarea, select, .uneditable-input {
   box-shadow: 0 0 10px black;
 }
 
-/* line 98, scss/style.scss */
+/* line 99, scss/style.scss */
 .menu-item {
   background: url(/images/divider.jpg) no-repeat top, url(/images/divider.jpg) no-repeat bottom;
   background-size: 200px;
@@ -111,13 +112,18 @@ input, textarea, select, .uneditable-input {
   color: #7b3f00;
   text-decoration: none;
 }
-/* line 112, scss/style.scss */
+/* line 113, scss/style.scss */
 .menu-item:hover {
   color: chocolate;
   text-decoration: none;
 }
 
-/* line 118, scss/style.scss */
+/* line 119, scss/style.scss */
 .menu {
   margin: -30px 2px 20px;
+}
+
+/* line 123, scss/style.scss */
+p {
+  font-size: 20px;
 }

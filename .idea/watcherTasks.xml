@@ -4,7 +4,7 @@
     <TaskOptions isEnabled="true">
       <option name="arguments" value="--source-maps --out-file $FileNameWithoutExtension$-compiled.js --presets es2015 $FilePath$" />
       <option name="checkSyntaxErrors" value="true" />
-      <option name="description" value="Transpiles ECMAScript 6 code to ECMAScript 5" />
+      <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />
       <option name="fileExtension" value="js" />
       <option name="immediateSync" value="true" />
@@ -14,16 +14,16 @@
         <array />
       </option>
       <option name="outputFromStdout" value="false" />
-      <option name="program" value="$USER_HOME$/AppData/Roaming/npm/babel.cmd" />
+      <option name="program" value="$PROJECT_DIR$/../babel/babel.cmd" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$FileDir$" />
       <envs />
     </TaskOptions>
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="compile D:/JavaScript/uzgoto $UnixSeparators($FilePath$)$" />
+      <option name="arguments" value="compile C:/3_kurs/uzgoto $UnixSeparators($FilePath$)$" />
       <option name="checkSyntaxErrors" value="true" />
-      <option name="description" value="Compiles .scss files into .css files using compass" />
+      <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />
       <option name="fileExtension" value="scss" />
       <option name="immediateSync" value="true" />

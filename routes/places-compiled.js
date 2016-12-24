@@ -5,16 +5,20 @@ var router = express.Router();
 var place = require('../model');
 
 router.get('/', function (req, res, next) {
-    res.render('list', {
-        title: 'all places',
-        list: place.all('places')
+    museum.all('places', function (list) {
+        res.render('list', {
+            title: 'all places',
+            model: 'places',
+            list: list
+        });
     });
 });
-
 router.get('/:name', function (req, res, next) {
-    res.render('show', {
-        title: req.params['name'],
-        content: place.read('places', req.params['name'])
+    place.read('places', req.params['name'], function (content) {
+        res.render('show', {
+            title: req.params['name'],
+            content: content
+        });
     });
 });
 

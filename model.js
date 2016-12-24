@@ -1,39 +1,33 @@
 var fs = require('fs');
 
-var all = function (model) {
-    var list;
+var all = function (model, cb) {
     fs.readdir(`./db/${model}/`, function (err, files) {
         if (err) {
             return console.log(err);
         }
-        console.log("All's OK");
-        list = files;
+        console.log("All's OK", files);
+        cb(files);
     });
-    return list;
 };
 
-var count = function(model) {
-    var ans;
+var count = function(model, cb) {
     fs.readdir(`./db/${model}/`, function (err, files) {
         if (err) {
             return console.log(err);
         }
-        console.log('All\'s OK');
-        ans = files.size;
+        console.log('All\'s OK: ', files.length);
+        cb(files.length);
     });
-    return ans;
 };
 
-var read = function (model, name) {
-    var ans;
+var read = function (model, name, cb) {
     fs.readFile(`./db/${model}/${name}.html`, function (err, content) {
         if (err) {
             return console.log(err);
         }
         console.log(`All's OK: ${content}`);
-        ans = content;
+        cb(content);
     });
-    return ans;
 };
 
 var create = function (model, name, text) {
