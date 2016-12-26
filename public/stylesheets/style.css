@@ -26,12 +26,13 @@ input, textarea, select, .uneditable-input {
 .input-form-border {
   padding: 12px 10px;
   border: 1px solid #dbdbdb;
+  border-radius: 10px;
   background: #fff;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-/* line 37, scss/style.scss */
+/* line 38, scss/style.scss */
 .navbar-inverse {
   border: none;
   z-index: 1000;
@@ -39,50 +40,50 @@ input, textarea, select, .uneditable-input {
   width: 100%;
 }
 
-/* line 44, scss/style.scss */
+/* line 45, scss/style.scss */
 .container {
   width: 100%;
   background-color: inherit;
   padding: 0;
 }
-/* line 49, scss/style.scss */
+/* line 50, scss/style.scss */
 .container .row {
   width: 500px;
   margin: 0 100px;
   padding: 50px 0;
   text-align: center;
 }
-/* line 55, scss/style.scss */
+/* line 56, scss/style.scss */
 .container .row img {
   z-index: 100;
 }
-/* line 60, scss/style.scss */
+/* line 61, scss/style.scss */
 .container .img-title {
   position: relative;
   left: 385px;
   top: -65px;
   width: 665px;
 }
-/* line 67, scss/style.scss */
+/* line 68, scss/style.scss */
 .container footer {
   padding: 15px;
 }
 
-/* line 72, scss/style.scss */
+/* line 73, scss/style.scss */
 .body-lu {
   background: url(/images/corner_lu.jpg) no-repeat top left;
   min-height: 500px;
   background-size: 200px;
 }
 
-/* line 78, scss/style.scss */
+/* line 79, scss/style.scss */
 .body-rd {
   background: url(/images/corner_rd.jpg) no-repeat bottom right;
   min-height: 500px;
   background-size: 200px;
   padding: 100px;
 }
-/* line 84, scss/style.scss */
+/* line 85, scss/style.scss */
 .body-rd .top-img {
   position: relative;
   display: flex;
@@ -90,7 +91,7 @@ input, textarea, select, .uneditable-input {
   left: 350px;
 }
 
-/* line 92, scss/style.scss */
+/* line 93, scss/style.scss */
 .wrapper {
   width: 1060px;
   height: 100%;
@@ -98,7 +99,7 @@ input, textarea, select, .uneditable-input {
   box-shadow: 0 0 10px black;
 }
 
-/* line 99, scss/style.scss */
+/* line 100, scss/style.scss */
 .menu-item {
   background: url(/images/divider.jpg) no-repeat top, url(/images/divider.jpg) no-repeat bottom;
   background-size: 200px;
@@ -112,18 +113,30 @@ input, textarea, select, .uneditable-input {
   color: #7b3f00;
   text-decoration: none;
 }
-/* line 113, scss/style.scss */
+/* line 114, scss/style.scss */
 .menu-item:hover {
   color: chocolate;
   text-decoration: none;
 }
 
-/* line 119, scss/style.scss */
+/* line 120, scss/style.scss */
 .menu {
   margin: -30px 2px 20px;
 }
 
-/* line 123, scss/style.scss */
+/* line 124, scss/style.scss */
 p {
   font-size: 20px;
+}
+
+/* line 128, scss/style.scss */
+.button {
+  border: 1px solid gray;
+  background-color: #DAA520;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+/* line 133, scss/style.scss */
+.button:hover {
+  cursor: hand;
 }

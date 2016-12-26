@@ -5,7 +5,7 @@ var router = express.Router();
 var cafe = require('../model');
 
 router.get('/', function (req, res, next) {
-    museum.all('cafes', function (list) {
+    cafe.all('cafes', function (list) {
         res.render('list', {
             title: 'all cafes',
             model: 'cafes',

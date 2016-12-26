@@ -1,5 +1,6 @@
 <% for(var i = 0; i < list.length; ++i) { %>
     <a href="/<%= model %>/<%= list[i].replace('.html', '') %>">
-        <img src="/images/<%= list[i].replace('html', '') %>/icon.jpg" >
+        <img src="/images/<%= list[i].replace('.html', '') %>/icon.jpg" width="250" height="250">
+        <% console.log(list[i]) %>
     </a>
 <% } %>

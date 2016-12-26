@@ -3,7 +3,7 @@ var router = express.Router();
 var place = require('../model');
 
 router.get('/', function (req, res, next) {
-    museum.all('places', function (list) {
+    place.all('places', function (list) {
         res.render('list', {
             title: 'all places',
             model: 'places',
